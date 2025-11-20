@@ -4,7 +4,6 @@ project:
   render:
     - index.qmd # home page
     - team.qmd # lab members
-    - projects.qmd #research --> separate into sections
     - deepsea-vents.qmd
     - time-series.qmd
     - data-science.qmd
@@ -34,7 +33,6 @@ website:
           - lab-policies.qmd
       - text: "research"
         menu:
-          - projects.qmd #overview of research themes
           - deepsea-vents.qmd
           - time-series.qmd
           - data-science.qmd
