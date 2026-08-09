@@ -577,6 +577,25 @@ img.banner {
 }
 
 // ---------------------------------------------------------------------------
+// Footer banner — specimen plate built from the lab's own line illustrations
+// (Acantharia, E. huxleyi, T. pseudonana, Trimyema sp.). Sits at the close of
+// a page, above the site-wide nav-footer. Same decorative treatment as the
+// landing banner, but shorter, so it reads as a closing flourish, not a hero.
+// ---------------------------------------------------------------------------
+
+.footer-banner img,
+img.footer-banner {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  display: block;
+}
+
+.footer-banner {
+  margin-block: 4rem 0;
+}
+
+// ---------------------------------------------------------------------------
 // Project tiles — richer than .topic cards: funder/site metadata, longer copy.
 // Two columns, so each tile has room for a real description.
 // ---------------------------------------------------------------------------
@@ -666,6 +685,51 @@ img.figure-wide {
 
 .figure-wide {
   margin-block: 2.5rem 3rem;
+}
+
+// ---------------------------------------------------------------------------
+// Side figures — float beside body text instead of breaking the column.
+// Default floats left; add .right to flip. Captions sit under the image at
+// the same reduced width. Clears itself before the next heading so a short
+// caption never straddles a section break.
+// ---------------------------------------------------------------------------
+
+.figure-side {
+  float: left;
+  width: 42%;
+  margin: .35rem 2rem 1.5rem 0;
+}
+
+.figure-side.right {
+  float: right;
+  margin: .35rem 0 1.5rem 2rem;
+}
+
+.figure-side img,
+img.figure-side {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  display: block;
+}
+
+.figure-side figcaption,
+.figure-side .figure-caption {
+  font-size: .82rem;
+  line-height: 1.4;
+  color: rgba($brand-ink, .7);
+  margin-top: .5rem;
+}
+
+h2, .h2 { clear: both; }
+
+@media (max-width: 700px) {
+  .figure-side,
+  .figure-side.right {
+    float: none;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
 }
 
 // ---------------------------------------------------------------------------

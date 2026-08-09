@@ -25,7 +25,9 @@ The *S*an *P*edro *O*cean *T*ime-series (SPOT) station is located about half way
 
 Each month we conducted CTD casts to obtain oceanographic measurements from the surface to just above the bottom (\~880 m), and collected seawater at the surface, deep chlorophyll maximum, oxycline (\~150 m), and hypoxic depth (\~880 m). Monthly collection resolves seasonal and annual trends in microbial species richness and relative abundance.
 
-![Surface sampling at SPOT.](/Users/skhu/Desktop/Projects/sarah-hu/images/SPOT_IMG-6982.JPG){.figure-wide}
+::: {.figure-side}
+![Surface sampling at SPOT.](images/hu-lab-field/SPOT_IMG-6982-web.jpg)
+:::
 
 ### Findings from SPOT
 
@@ -43,7 +45,9 @@ To access the metabolically-active component of the protistan community at SPOT,
 
 The [Hawaii Ocean Time-series (HOT)](http://aco-ssds.soest.hawaii.edu/ALOHA/) samples Station ALOHA (A Long-Term Oligotrophic Habitat Assessment) monthly, and has been running for over 30 years. Through the Simons Foundation-funded SCOPE collaboration, I took part in several cruises to Station ALOHA. This let us study the oligotrophic North Pacific Subtropical Gyre and compare our findings and methods against the coastal California ecosystem.
 
-![RV Kilo Moana](/Users/skhu/Desktop/Projects/sarah-hu/images/HOT_IMG-4423.JPG){.figure-wide}
+::: {.figure-side .right}
+![RV Kilo Moana](images/hu-lab-field/HOT_IMG-4423-web.jpg)
+:::
 
 For one field season we conducted high-resolution diel sampling, following a parcel of water and sampling every 4 hours. This captured daily fluctuations in microbial community dynamics: species composition, microbe-microbe interactions, grazing activity, and how microbial photosynthetic machinery operates on an hourly time scale.
 
