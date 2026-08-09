@@ -1,200 +1,186 @@
 ---
-title: "Lab members"
-format: 
+title: "People"
+format:
   html:
     toc: true
     toc-depth: 4
     toc-location: left
-    page-layout: full
-editor: visual
+editor: source
 ---
 
-![On board the RV Thomas G Thompson for PROTATAX23. July 2023](images/TN420-Sarah-6.jpg){fig-align="left" width="280"}
+The lab is built on a shared love for the natural world. We combine field expeditions, wet-lab experiments, molecular methods, and computational biology.
 
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:20px"'}
-knitr::include_graphics("images/profile-slack-shu.jpg")
-```
+![](images/banners/people-together.jpg){.banner fig-alt="Lab members on deck with ROV Jason, around the lab meeting table, at a holiday gathering, and at sea."}
+
+## Principal investigator
+
+:::: person-lead
+![](images/headshots/profile-slack-shu.jpg)
+
+::: lead-body
+#### Dr. Sarah K Hu
+
+[Assistant Professor]{.role}
+
+[skhu \[at\] tamu.edu · she/her · [cv](products/cv.pdf)]{.contact}
+
+I am a microbial ecologist devoted to figuring out what the weird marine microeukaryotes are doing in the ocean. Our work combines field expeditions, wet-lab experiments, molecular methods, and computational biology to address questions about the ecological roles microorganisms play in the ecosystem.
+
+I'm most excited about research in the deep sea, especially biologically rich habitats like hydrothermal vents. I love teaching and mentoring about all things biological oceanography, coding, and more.
 :::
+::::
 
-### Dr. Sarah Hu
+## Graduate students
 
-**Assistant Professor**
-
-skhu \[at\] tamu.edu\
-[cv](products/cv.pdf)\
-she/her
-
-I am a microbial ecologists devoted to figuring out what all the weird marine microeukaryotes are doing in the ocean. Our work combines field expeditions, wet-lab experiments, molecular methods, and computational biology to ask address questions about the ecological roles microorganisms play in the ecosystem.
-
-I'm most excited about research in the deep-sea, especially biologically rich habitats like hydrothermal vents. I love teaching and mentoring about all things biological oceanography, coding, and more! This lab is built on a shared love for the natural world.
-
-<br><br><br>
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/IMG_3888.jpg")
-```
-:::
+:::::::::: person-grid
+::: person
+![](images/headshots/Alexis.jpg)
 
 #### Alexis Adams
 
-**PhD student**
+[PhD student]{.role}
+
+[alexis98adams \[at\] tamu.edu · she/her]{.contact}
 
 My name is Alexis and I am a PhD student here at Texas A&M! With a passion for understanding how ecological interactions impact the world around us I have dedicated myself to studying unicellular eukaryotes and their important role within the deep ocean. When I'm not working you can find me reading or playing my piano. I believe science should be a safe space for all and I am excited to explore the fascinating world of microbes!
-
-alexis98adams \[at\] tamu.edu\
-she/her
-
-
-
-<br><br><br>
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/20191215_094405.jpg")
-```
 :::
+
+::: person
+![](images/headshots/Kayla.jpg)
 
 #### Kayla Nedd
 
-**PhD student**
+[PhD student]{.role}
 
-knedd \[at\] tamu.edu\
-she/her
+[knedd \[at\] tamu.edu · she/her]{.contact}
 
-My name is Kayla Nedd. I joined the Hu lab in the summer of 2023 as a PhD student. My research interests are microbial ecology in extreme environments. I would like to understand what allows these microbes to be so well equipped to handle the intense conditions of the deep sea. Last summer, I participated in my first research cruise to Axial Seamount, an underwater volcano, to study protists in deep sea hydrothermal vents. I am thrilled to delve further into my research and better understand this truly magnificent aspect of our planet.
-
-
-<br><br><br>
-
-
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/woodward.jpg")
-```
+My name is Kayla Nedd. I joined the Hu lab in the summer of 2023 as a PhD student. My research interests are microbial ecology in extreme environments. I would like to understand what allows these microbes to be so well equipped to handle the intense conditions of the deep sea. In 2023, I participated in my first research cruise to Axial Seamount, an underwater volcano, to study protists in deep-sea hydrothermal vents. I am thrilled to delve further into my research and better understand this truly magnificent aspect of our planet.
 :::
+
+::: person
+![](images/headshots/woodward.jpg)
 
 #### Hailey Woodward
 
-**PhD student**
+[PhD student]{.role}
+
+[haileymwwd \[at\] tamu.edu · she/her]{.contact}
 
 My name is Hailey and I am excited to be back at A&M as a PhD student after receiving my Bachelors in Microbiology in 2023. I love all things microbiology, especially marine microbes, what they get up to, and their interactions with other organisms in the ocean over time. As a first-gen, low-income student, I hope to encourage students with a background like mine to pursue science and research! In my free time, I love to read and knit, often at the same time.
-
-haileymwwd\[at\] tamu.edu\
-she/her
-
-
-
-<br><br><br>
-
-
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/Abby.jpeg")
-```
 :::
 
-#### Abby Day
-
-##### **Undergraduate Research Assistant**
-
-she/her
-
-Abby is an Environmental Geoscience major minoring in Anthropology and GIST. She is extremely interested in the world around us, both the past and what is currently going on today. As an Environmental Geoscience major minoring in Anthropology, she hopes to pursue a career that can combine both of these fields. In the past, Abby did research on microorganisms and what their distribution in the water column could tell us about past climates. That study has continued to pique her interest and she is pursing similar work in the Hu lab.
-
-
-
-<br><br><br>
-
-
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/lerma.jpeg")
-```
+:::: person
+::: placeholder-img
+HEADSHOT NEEDED\
+Maria\
+square crop, ≥600 × 600 px\
+save as images/headshots/maria.jpg
 :::
 
-#### Madeleine Lerma
+#### Maria
 
-##### **Undergraduate Research Assistant**
+[Role TBD]{.role}
 
-she/her
+[TBD]{.contact}
 
-Madeleine is a Zoology major and ECCB minor from Corpus Christi, Texas. After graduating from Texas A&M University, she hopes to attend graduate school to become a marine biologist and pursue a career in research. She is undecided about the specialty she may choose, but is passionate about marine ecosystems. In her free time, she enjoys reading, listening to music, and exploring nature.
+*Bio to be added.*
+::::
 
-
-
-<br><br><br>
-
-
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/meagan.jpg")
-```
+:::: person
+::: placeholder-img
+HEADSHOT NEEDED\
+Hana\
+square crop, ≥600 × 600 px\
+save as images/headshots/hana.jpg
 :::
+
+#### Hana
+
+[Role TBD]{.role}
+
+[TBD]{.contact}
+
+*Bio to be added.*
+::::
+::::::::::
+
+## Undergraduate researchers
+
+:::: person-grid
+::: person
+![](images/headshots/meagan.jpg)
 
 #### Meagan Sonsel
 
-##### **Undergraduate Research Assistant**
+[Research assistant]{.role}
 
-she/her
+[she/her]{.contact}
 
-Meagan Sonsel is an Environmental Geoscience major with a concentration in biosphere. She is extremely excited to work in the lab and discover more about microbial eukaryotes in the deep sea.
+Meagan Sonsel graduated with a degree in Environmental Geoscience with a concentration in biosphere, and continues to work in the lab on microbial eukaryotes in the deep sea.
+:::
+::::
 
+## Lab alumni
 
+:::::: alumni-grid
+::: person
+![](images/headshots/Abby.jpeg)
 
-<br><br><br>
+##### Abby Day
 
+[Undergraduate researcher]{.role}
 
-
-::: {style="float:left"}
-```{r, echo=FALSE, out.width= "250px", out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("images/siddarth.jpg")
-```
+[Environmental Geoscience, B.S.]{.contact}
 :::
 
-#### Siddarth Seshampally
+::: person
+![](images/headshots/lerma.jpeg)
 
-##### **Undergraduate Research Assistant**
+##### Madeleine Lerma
 
-Siddharth is a freshman at Texas A&M University, class of 2027, majoring in Oceanography. Playing football (not American football) has been a passion of his and he hopes to play for the A&M team soon. Siddarth has a deep curiosity for the mysteries of the ocean, and his goal is to contribute to the progress of this field. Eager to explore the wonders of marine science and dedicated to making a positive impact, he looks forward to the exciting journey that lies ahead.
+[Undergraduate researcher]{.role}
 
+[Zoology, B.S.]{.contact}
+:::
 
+::: person
+![](images/headshots/siddarth.jpg)
 
+##### Siddarth Seshampally
 
-<br><br><br>
+[Undergraduate researcher]{.role}
 
+[Oceanography]{.contact}
+:::
+::::::
 
-
+![Lab members presenting at conferences and working at the bench.](images/banners/people-presenting.jpg){.figure-wide}
 
 ## Join us
 
-Please contact me (skh\[at\]tamu.edu) if you are interested in working together. **I do not currently have any open positions for Masters, PhD, or Postdoctoral positions**. Watch this space for future opportunities.
+\
+**I do not currently have any open positions for Masters, PhD, or Postdoctoral positions.** Watch this space for future opportunities.
 
 #### PhD opportunities
 
-[How do I apply?](https://ocean.tamu.edu/graduate-students/ms-phd-oceanography/ms-phd-information/index.html)\
+[How do I apply?](https://ocean.tamu.edu/graduate-students/ms-phd-oceanography/ms-phd-information/index.html)
 
--   [Texas A&M Graduate program](https://ocean.tamu.edu/academics/graduate-programs/index.html) \| Apply before January 1
+- [Texas A&M Graduate program](https://ocean.tamu.edu/academics/graduate-programs/index.html) \| Apply before January 1
 
--   [NSF GRFP](https://www.nsfgrfp.org) \| Deadline: mid-October
+- [NSF GRFP](https://www.nsfgrfp.org) \| Deadline: mid-October
 
--   [Simons Graduate Fellowship in Ecology & Evolution](https://www.simonsfoundation.org/grant/simons-graduate-fellowships-in-ecology-and-evolution/) \| Deadline: July
+- [Simons Graduate Fellowship in Ecology & Evolution](https://www.simonsfoundation.org/grant/simons-graduate-fellowships-in-ecology-and-evolution/) \| Deadline: July
 
 #### Undergraduate opportunities
 
--   If you are a current TAMU undergraduate, contact me directly for the potential to join.
+- If you are a current TAMU undergraduate, contact me directly for the potential to join.
 
--   [REU program at TAMU](https://oceanography.tamu.edu/academics/reu/index.html) \| Deadline: February
+- [REU program at TAMU](https://oceanography.tamu.edu/academics/reu/index.html) \| Deadline: February
 
 #### Postdoctoral opportunities
 
--   [NSF Ocean Sciences Postdoctoral Research Fellowships](https://www.nsf.gov/pubs/2021/nsf21538/nsf21538.htm) \| Deadline: May & November
+- [NSF Ocean Sciences Postdoctoral Research Fellowships](https://www.nsf.gov/pubs/2021/nsf21538/nsf21538.htm) \| Deadline: May & November
 
--   [C-COMP Postdoctoral Fellows](https://ccomp-stc.org/education-diversity/graduate-students-and-postdoctoral-researchers/) \| Deadline: mid-April
+- [C-COMP Postdoctoral Fellows](https://ccomp-stc.org/education-diversity/graduate-students-and-postdoctoral-researchers/) \| Deadline: mid-April
 
--   [Simons Foundation Postdoctoral Fellowship in Marine Microbial Ecology](https://www.simonsfoundation.org/grant/simons-postdoctoral-fellowships-in-marine-microbial-ecology/) \| Deadline: mid-May
+- [Simons Foundation Postdoctoral Fellowship in Marine Microbial Ecology](https://www.simonsfoundation.org/grant/simons-postdoctoral-fellowships-in-marine-microbial-ecology/) \| Deadline: mid-May
