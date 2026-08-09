@@ -29,17 +29,23 @@ To assess microbial biodiversity, we rely on sequencing the DNA from microbial c
 
 For this work, I run incubations with diffuse flow fluid collected via ROV to capture the grazing activity of heterotrophic protists. Consumption of microbial prey by protistan grazers (heterotrophs) is a key route of carbon exchange (the transfer of chemosynthetic microorganisms to higher trophic level), and these experiments yield a grazing rate (cells consumed mL^-1^ day^-1^). To assess grazing pressure, I compare grazing rates and community compositions of protistan assemblages within discharging vent fluid, the plume (the hydrothermally-influenced environment above the vent site), and background deep-sea water.
 
-![](/Users/skhu/Desktop/Projects/sarah-hu/images/IMG_3581.jpg){.figure-wide}
-
-![](/Users/skhu/Desktop/Projects/sarah-hu/images/IMG_4779.jpg){.figure-wide}
-
-![](/Users/skhu/Desktop/Projects/sarah-hu/images/20200120_141850.jpg){.figure-wide}
+::: {.figure-side}
+![Sarah running at-sea grazing experiments at Mid-Cayman Rise.](images/hu-lab-field/IMG_3581-web.jpg)
+:::
 
 ::: column-margin
 > Protistan grazing is higher within diffuse vent fluid
 :::
 
 In aquatic habitats, transition zones driven by changes in chemistry or nutrients create biological 'hotspots' of microbial activity. The hydrothermal vent environment is one such transition zone, where reduced vent fluid mixes with cold, oxygenated seawater over centimeter to meter scales.
+
+::: {.figure-side}
+![Sampling microcolonizer experiments on the EV Nautilus.](images/hu-lab-field/IMG_4779-web.jpg)
+:::
+
+::: {.figure-side}
+![Mid-Cayman Rise laboratory set-up for RNA-SIP incubations.](images/hu-lab-field/20200120_141850-web.jpg)
+:::
 
 ## Deep-sea vent protists
 
@@ -51,7 +57,7 @@ The total number of protistan species detected with amplicon sequencing was cons
 > Protistan diversity is elevated within diffuse vent fluid
 :::
 
-![Sampling Axial Seamount. Credit: J. Huber WHOI DSL](/Users/skhu/Desktop/Projects/sarah-hu/images/sulis_20230722202257.jpg){.figure-wide}
+![Sampling Axial Seamount. Credit: J. Huber WHOI DSL](images/sulis_20230722202257.jpg){.figure-wide}
 
 
 ## Microbes need frenemies
@@ -83,7 +89,9 @@ I was a part of the RV Atlantis (AT42-22) research cruise to study the geochemis
 
 Samples from the Von Damm (10 sites) and Piccard (8 sites) vent fields support detailed analysis of microbial composition, biogeography, and food web role. Three grazing experiments originated from CTD-rosette casts in the background and plume environment and six used fluid from the HOG. Four grazing experiments were performed with the IGT, holding incubations at *in situ* pressure.
 
-![Shrimp at Von Damm hydrothermal vent field. Credit: J. Seewald WHOI DSL](/Users/skhu/Desktop/Projects/sarah-hu/images/vondamm-j21235.png){.figure-wide}
+::: {.figure-side}
+![Shrimp at Von Damm hydrothermal vent field.](images/hu-lab-field/vondamm-shrimp-web.jpg)
+:::
 
 ### Gorda Ridge · 2019
 
@@ -101,8 +109,8 @@ All six microcolonizer experiments were placed on and near active diffuse flow a
 
 - Are the same species found on the substrates also found at the diffuse vent fluid?
 
-![Microcolonizer experiments. Ocean Exploration Trust. EV Nautilus.](/Users/skhu/Desktop/Projects/sarah-hu/images/hu-lab-field/mtedwards-cones.png){.figure-wide}
+![Microcolonizer experiments. Ocean Exploration Trust. EV Nautilus.](images/hu-lab-field/mtedwards-cones.png){.figure-wide}
 
 These findings were presented at the ISOP virtual poster session.
 
-![Figure 1 map.](/Users/skhu/Desktop/Projects/sarah-hu/images/fig1_Map_Revised.png){.figure-wide}
+![Map of main deep-sea hydrothermal vent fields. Source: Hu et al. 2023](images/banners/fig1-map-web.jpg){.figure-wide}
