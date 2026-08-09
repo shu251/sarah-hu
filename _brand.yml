@@ -1,0 +1,39 @@
+# Ocean Storm — shared identity for site, dashboards, and slides.
+# Headings are Source Serif 4 (not Helvetica as in the reference brand file):
+# the serif is the deliberate departure from a default Bootstrap look.
+color:
+  palette:
+    slate-navy: "#304F6E"
+    ink: "#474140"
+    deep-teal: "#346D6E"
+    slate-blue: "#659ABC"
+    sky: "#82BADC"
+    sand: "#CCAF8E"
+    gold: "#F3D9A3"
+    sage: "#75877B"
+  foreground: ink
+  background: "#FBFAF8"      # off-white, not pure white — softer, editorial
+  primary: deep-teal
+  secondary: slate-blue
+  info: slate-blue
+  success: sage
+  warning: gold
+
+logo:
+  small: images/logos/hu-lab-logo.png
+  medium: images/logos/hu-lab-logo.png
+
+typography:
+  fonts:
+    - family: Source Serif 4
+      source: google
+      weight: [400, 600]
+      style: [normal, italic]
+    - family: Helvetica
+      source: system
+  base: Helvetica
+  headings:
+    family: Source Serif 4
+    color: slate-navy
+    weight: 600
+  monospace: "Source Code Pro"

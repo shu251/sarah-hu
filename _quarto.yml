@@ -1,47 +1,64 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: docs # GitHub Pages serves this repo from /docs on main
   render:
-    - index.qmd # home page
-    - team.qmd # lab members
+    - index.qmd
+    - research.qmd
     - deepsea-vents.qmd
     - time-series.qmd
     - data-science.qmd
+    - team.qmd
     - publications.qmd
     - lab-policies.qmd
-#margin-header: |
- # ![](/images/logo-hu.png)
-  
+
 website:
+  title: "Hu Lab"
+  description: "Marine microbial eukaryote ecology at Texas A&M — protists, deep-sea hydrothermal vents, and computational biology."
+  site-url: "https://shu251.github.io/sarah-hu/"
+  favicon: images/logos/hu-lab-logo.png
   navbar:
-    background: "#f4f1de"
-    foreground: "#3d405b"
+    background: light # light chrome — content carries the color
+    logo: images/logos/hu-lab-logo.png
+    logo-alt: "Hu Lab logo"
     pinned: true
     search: true
-    tools:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: team.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+    right:
       - icon: github
         href: https://github.com/shu251
+        aria-label: GitHub
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=9CI91CMAAAAJ&hl=en
+        aria-label: Google Scholar
       - icon: instagram
         href: https://www.instagram.com/microhukaryote/
-      - icon: share
-        href: https://scholar.google.com/citations?user=9CI91CMAAAAJ&hl=en     
+        aria-label: Instagram
+      - icon: envelope
+        href: mailto:skhu@tamu.edu
+        aria-label: Email
+  page-navigation: true
+  page-footer:
+    background: light
+    left: "2026 Hu Lab · Department of Oceanography, Texas A&M University"
     right:
-      - index.qmd
-      - text: "about"
-        menu:
-          - team.qmd # people
-          - lab-policies.qmd
-      - text: "research"
-        menu:
-          - deepsea-vents.qmd
-          - time-series.qmd
-          - data-science.qmd
-          - publications.qmd
-    page-navigation: true
+      - href: lab-policies.qmd
+        text: "Lab community"
+      - href: products/cv.pdf
+        text: "CV"
 
 format:
   html:
-    theme: 
-      - custom.scss
-    format: revealjs
-    css: styles.css
+    theme: [cosmo, brand, styles.scss] # brand after theme so brand wins
+    toc: true
+    fontsize: 1.1rem
+    linestretch: 1.65
+    grid:
+      body-width: 900px

@@ -1,0 +1,741 @@
+/*-- scss:defaults --*/
+
+// Palette and type families come from _brand.yml (Ocean Storm + Source Serif 4).
+// This file holds the editorial layer: type scale, rules, and whitespace.
+
+// Quarto's brand layer emits `font-family:Source Serif 4` unquoted, which is
+// invalid CSS (a family name with a numeric word must be quoted) and is dropped
+// by browsers. Set a properly quoted stack here, with a serif fallback so the
+// page still reads as intended if Google Fonts is unreachable.
+$headings-font-family: "Source Serif 4", Georgia, "Iowan Old Style", "Times New Roman", serif;
+
+$headings-font-weight: 600 !default;
+$link-decoration:      none !default;
+$border-radius:        .5rem !default;
+$border-radius-lg:     .5rem !default;
+$border-radius-sm:     .5rem !default;
+
+$min-contrast-ratio: 2.4 !default;
+
+// Quiet chrome
+$navbar-font-size:   .95rem !default;
+$toc-font-size:      .88rem !default;
+
+$table-border-color: rgba(0, 0, 0, .08) !default;
+$table-bg-scale:     0 !default;
+
+$alert-color-scale: 0% !default;
+$alert-bg-scale:    0 !default;
+
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-brand,
+.quarto-title h1.title {
+  font-family: $headings-font-family;
+}
+
+// ---------------------------------------------------------------------------
+// Statement hero — one large characterful line on the landing page.
+// The kicker does the job the teal title-rule does on interior pages.
+// ---------------------------------------------------------------------------
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .8rem;
+  color: $brand-deep-teal;
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-statement {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  color: $brand-slate-navy;
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
+  margin: 0 0 2rem;
+}
+
+.hero-lead {
+  font-size: 1.22rem;
+  line-height: 1.55;
+  color: rgba($brand-ink, .92);
+  max-width: 58ch;
+  margin-bottom: 2.5rem;
+}
+
+// ---------------------------------------------------------------------------
+// Editorial type scale. Headings are Source Serif 4 (from _brand.yml); the
+// personality lives in the size jump between h1 and body, not in decoration.
+// ---------------------------------------------------------------------------
+
+h1, .h1 {
+  font-size: clamp(2.4rem, 5.5vw, 3.9rem);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+  margin-top: 4.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba($brand-slate-navy, .16);
+}
+
+h3, .h3 {
+  font-size: 1.28rem;
+  margin-top: 2.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.08rem;
+  margin-top: 2rem;
+}
+
+// A short teal rule under the page title only — the one repeated accent.
+.quarto-title h1.title::after,
+main.content > h1:first-child::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  background: $brand-deep-teal;
+  margin-top: 1.5rem;
+}
+
+// Lead paragraph: the first paragraph after the page title reads larger.
+.lead,
+.quarto-title-block + p:first-of-type {
+  font-size: 1.22rem;
+  line-height: 1.55;
+  color: rgba($brand-ink, .92);
+}
+
+// Mono eyebrow label, for section kickers where one is useful.
+.eyebrow {
+  display: block;
+  font-family: var(--bs-font-monospace);
+  font-size: .74rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: $brand-deep-teal;
+  margin-bottom: .4rem;
+}
+
+// ---------------------------------------------------------------------------
+// Air
+// ---------------------------------------------------------------------------
+
+// h2 already carries the section spacing via its own margin-top; adding
+// margin here stacks with it and produces ~6rem gaps between sections.
+main.content > section,
+main.content > .section {
+  margin-block: 0;
+}
+
+main.content p { margin-bottom: 1.25rem; }
+
+main.content ul,
+main.content ol { margin-bottom: 1.5rem; }
+
+main.content li { margin-bottom: .5rem; }
+
+// ---------------------------------------------------------------------------
+// Chrome: a hairline navbar and footer, nothing filled
+// ---------------------------------------------------------------------------
+
+.navbar {
+  background-color: $body-bg !important;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  padding-block: .35rem;
+}
+
+.navbar-brand img { max-height: 34px; }
+
+.navbar .nav-link {
+  letter-spacing: .01em;
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  box-shadow: inset 0 -2px 0 $brand-deep-teal;
+}
+
+.nav-footer {
+  background-color: $body-bg !important;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  font-size: .85rem;
+  margin-top: 5rem;
+  padding-block: 2rem;
+}
+
+// Links: underline on hover only, so body text stays calm.
+main.content a:not(.btn):not(.card-link) {
+  border-bottom: 1px solid rgba($brand-deep-teal, .35);
+}
+
+main.content a:not(.btn):not(.card-link):hover {
+  border-bottom-color: $brand-deep-teal;
+}
+
+// Table of contents
+#TOC, .sidebar.toc-left {
+  a { border-bottom: none; }
+}
+
+// ---------------------------------------------------------------------------
+// Research landing cards
+// ---------------------------------------------------------------------------
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.75rem;
+  margin-block: 2.5rem 3.5rem;
+}
+
+.topic {
+  border-top: 3px solid $brand-deep-teal;
+  padding-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic h3 {
+  margin-top: 0;
+  font-size: 1.18rem;
+  margin-bottom: .6rem;
+}
+
+.topic p {
+  font-size: .96rem;
+  line-height: 1.55;
+  margin-bottom: .9rem;
+}
+
+// Push the link to the bottom so it lines up across cards of unequal length.
+.topic > p:last-of-type { margin-top: auto; margin-bottom: 0; }
+
+.topic .more {
+  font-family: var(--bs-font-monospace);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-bottom: none !important;
+}
+
+// ---------------------------------------------------------------------------
+// People
+// ---------------------------------------------------------------------------
+
+// Columns are capped, not 1fr: a section with a single person would otherwise
+// stretch one card across the full measure and blow the headshot up to 900px.
+.person-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 17rem));
+  justify-content: start;
+  gap: 3rem 2.25rem;
+  margin-block: 2.5rem 3.5rem;
+}
+
+// The PI reads as a lead card: photo beside the bio, not above it.
+.person-lead {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-block: 2.5rem 3.5rem;
+}
+
+.person-lead img,
+.person-lead .placeholder-img {
+  flex: 0 0 15rem;
+  width: 15rem;
+  height: 15rem;
+  aspect-ratio: 1 / 1;
+  align-self: flex-start;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: $border-radius;
+  filter: grayscale(100%);
+  transition: filter .35s ease;
+}
+
+.person-lead:hover img { filter: grayscale(0%); }
+
+.person-lead .lead-body { flex: 1 1 auto; min-width: 0; }
+
+.person-lead h4 {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+  font-size: 1.35rem;
+}
+
+.person-lead .role {
+  display: block;
+  font-family: var(--bs-font-monospace);
+  font-size: .76rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: $brand-deep-teal;
+  margin-bottom: .6rem;
+}
+
+.person-lead .contact {
+  display: block;
+  font-size: .88rem;
+  color: rgba($brand-ink, .75);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .person-lead { flex-direction: column; }
+  .person-lead img,
+  .person-lead .placeholder-img { flex-basis: auto; width: 100%; max-width: 15rem; }
+}
+
+.person { display: flex; flex-direction: column; }
+
+.person img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: $border-radius;
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+  transition: filter .35s ease;
+}
+
+.person:hover img { filter: grayscale(0%); }
+
+.person h4,
+.person h5 {
+  margin: 0 0 .2rem 0;
+  border-top: none;
+  padding-top: 0;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.person .role {
+  display: block;
+  font-family: var(--bs-font-monospace);
+  font-size: .74rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: $brand-deep-teal;
+  margin-bottom: .55rem;
+}
+
+.person .contact {
+  display: block;
+  font-size: .82rem;
+  color: rgba($brand-ink, .75);
+  margin-bottom: .8rem;
+}
+
+.person p {
+  font-size: .92rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 12rem));
+  justify-content: start;
+  gap: 2rem 1.5rem;
+  margin-block: 2rem 3rem;
+}
+
+.alumni-grid .person h5 { font-size: .95rem; }
+.alumni-grid .person img { filter: grayscale(100%); }
+
+// Labeled slot for an image not yet supplied
+.placeholder-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px dashed rgba($brand-slate-navy, .4);
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: rgba($brand-slate-navy, .65);
+  font-family: var(--bs-font-monospace);
+  font-size: .72rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.placeholder-wide {
+  aspect-ratio: 21 / 9;
+  margin-block: 2.5rem;
+}
+
+// ---------------------------------------------------------------------------
+// Pull quotes in the margin
+// ---------------------------------------------------------------------------
+
+.column-margin blockquote {
+  border-left: 2px solid $brand-deep-teal;
+  padding-left: .9rem;
+  font-family: $headings-font-family;
+  font-size: .95rem;
+  line-height: 1.45;
+  color: $brand-slate-navy;
+  margin-left: 0;
+}
+
+
+// ---------------------------------------------------------------------------
+// Landing page components
+// ---------------------------------------------------------------------------
+
+// Stat row: four figures, mono numerals, no boxes or fills.
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 1.5rem 2rem;
+  margin-block: 3rem 1rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid rgba($brand-slate-navy, .16);
+  border-bottom: 1px solid rgba($brand-slate-navy, .16);
+}
+
+.stat-num {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: $brand-slate-navy;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  display: block;
+  font-size: .82rem;
+  line-height: 1.35;
+  color: rgba($brand-ink, .78);
+  margin-top: .4rem;
+  max-width: 12rem;
+}
+
+// Numbered question blocks — the landing page's typographic feature.
+//
+// Quarto wraps a heading and the content after it in a nested <section>, so the
+// h3 and p are NOT direct children of .q. Flex on the two real children (the
+// number paragraph and the section) rather than a grid keyed to h3/p.
+.question-list { margin-block: 2rem 1rem; }
+
+.q {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding-block: 1.75rem;
+  border-top: 1px solid rgba($brand-slate-navy, .12);
+}
+
+.q:first-child { border-top: none; padding-top: .5rem; }
+
+.q > p:first-child {
+  flex: 0 0 2.5rem;
+  margin: 0;
+}
+
+.q > section,
+.q > .level3 {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-block: 0;
+}
+
+.q-num {
+  font-family: var(--bs-font-monospace);
+  font-size: .95rem;
+  color: $brand-deep-teal;
+}
+
+.q h3 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.45rem;
+  border-top: none;
+  padding-top: 0;
+}
+
+.q p {
+  margin-bottom: 0;
+  color: rgba($brand-ink, .88);
+}
+
+@media (max-width: 560px) {
+  .q { flex-direction: column; gap: .4rem; }
+  .q > p:first-child { flex: none; }
+}
+
+// Field sites: a dated list, left rail for the year.
+.sitelist { margin-block: 2rem 1rem; }
+
+.site {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: .35rem 1.5rem;
+  padding-block: 1.4rem;
+  border-top: 1px solid rgba($brand-slate-navy, .12);
+}
+
+.site:first-child { border-top: none; padding-top: .5rem; }
+
+.site-when {
+  grid-row: 1 / span 2;
+  font-family: var(--bs-font-monospace);
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: $brand-deep-teal;
+  padding-top: .2rem;
+}
+
+.site p { grid-column: 2; margin-bottom: 0; }
+
+.site-note {
+  display: block;
+  font-size: .92rem;
+  color: rgba($brand-ink, .78);
+  margin-top: .2rem;
+}
+
+@media (max-width: 560px) {
+  .site { grid-template-columns: 1fr; }
+  .site-when { grid-row: auto; }
+  .site p { grid-column: 1; }
+}
+
+// The closing card row sits below a rule, without needing an empty heading.
+.topic-grid-footer {
+  border-top: 1px solid rgba($brand-slate-navy, .16);
+  padding-top: 2.5rem;
+  margin-top: 4rem;
+}
+
+// "Latest" on the landing page: same borderless editorial list as the sites.
+.latest { margin-block: 2rem 1.25rem; }
+
+.latest ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+
+.latest li {
+  padding-block: 1.1rem;
+  border-top: 1px solid rgba($brand-slate-navy, .12);
+  font-size: .95rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.latest li:first-child { border-top: none; }
+
+// ---------------------------------------------------------------------------
+// Editorial grid listing — calm cards, hairline, room to breathe.
+// Applies if a Quarto `listing:` is ever added (news, posts, a portfolio).
+// ---------------------------------------------------------------------------
+
+.quarto-grid-item {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 0;
+  padding-top: 1.25rem;
+}
+
+.quarto-grid-item .listing-title {
+  color: $brand-slate-navy;
+  font-weight: 600;
+}
+
+.quarto-grid-item .card-img-top { border-radius: $border-radius; }
+
+// ---------------------------------------------------------------------------
+// Landing banner — composed from lab microscopy. Decorative, so it carries
+// generic alt text and no caption.
+// ---------------------------------------------------------------------------
+
+.banner img,
+img.banner {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  display: block;
+  margin-block: 0 3rem;
+}
+
+// ---------------------------------------------------------------------------
+// Project tiles — richer than .topic cards: funder/site metadata, longer copy.
+// Two columns, so each tile has room for a real description.
+// ---------------------------------------------------------------------------
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.5rem 2.5rem;
+  margin-block: 2rem 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba($brand-slate-navy, .22);
+  padding-top: 1.1rem;
+}
+
+// The metadata line sits above the heading, so it reads as a label.
+.project-meta {
+  display: block;
+  font-family: var(--bs-font-monospace);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: $brand-deep-teal;
+  margin-bottom: .55rem;
+  line-height: 1.5;
+}
+
+// Quarto nests the heading and body in a <section>; make that the flex child.
+.project > section,
+.project > .level3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-block: 0;
+}
+
+.project h3 {
+  margin: 0 0 .6rem 0;
+  font-size: 1.18rem;
+  line-height: 1.3;
+  border-top: none;
+  padding-top: 0;
+}
+
+.project p {
+  font-size: .95rem;
+  line-height: 1.55;
+  margin-bottom: .9rem;
+}
+
+.project p:last-of-type { margin-top: auto; margin-bottom: 0; }
+
+.project .more {
+  font-family: var(--bs-font-monospace);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-bottom: none !important;
+}
+
+// Marked slot for a link Sarah still owes — visible, not a dead <a href="#">.
+.tbd {
+  display: inline-block;
+  font-family: var(--bs-font-monospace);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba($brand-slate-navy, .55);
+  border: 1px dashed rgba($brand-slate-navy, .35);
+  border-radius: $border-radius;
+  padding: .3rem .6rem;
+}
+
+// Wide in-page figures — same full-measure treatment as the banner, but they
+// keep their caption and sit inside the content flow.
+.figure-wide img,
+img.figure-wide {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  display: block;
+}
+
+.figure-wide {
+  margin-block: 2.5rem 3rem;
+}
+
+// ---------------------------------------------------------------------------
+// Project logos. Hex marks sit above the metadata line so tiles without a logo
+// still align — the whole block simply starts lower on tiles that have one.
+// ---------------------------------------------------------------------------
+
+.project-logo img,
+img.project-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  display: block;
+  margin: 0 0 .9rem 0;
+  border-radius: 0;
+}
+
+.project > p:has(img.project-logo) { margin-bottom: 0; }
+
+// ---------------------------------------------------------------------------
+// Funder / institution row in Support. Grayscale and quiet by default so the
+// marks read as attribution, not decoration.
+// ---------------------------------------------------------------------------
+
+.funder-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.25rem;
+  margin-block: 2rem 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba($brand-slate-navy, .12);
+}
+
+.funder-row p { margin: 0; }
+
+.funder-row img {
+  height: 58px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: .72;
+  transition: filter .3s ease, opacity .3s ease;
+}
+
+.funder-row img:hover { filter: grayscale(0%); opacity: 1; }
+
+.funder-slot {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 .9rem;
+  border: 1px dashed rgba($brand-slate-navy, .35);
+  border-radius: $border-radius;
+  font-family: var(--bs-font-monospace);
+  font-size: .62rem;
+  line-height: 1.45;
+  color: rgba($brand-slate-navy, .6);
+}
+
+// Reserve the logo band on tiles that have no logo, so titles and metadata
+// stay on a common baseline across a row instead of stepping up and down.
+.project:not(:has(img.project-logo))::before {
+  content: "";
+  display: block;
+  height: 84px;
+  margin-bottom: .9rem;
+}
+
+// A tile can carry more than one link; keep them on one line with a real gap.
+.project .more + .more { margin-left: 1.5rem; }
