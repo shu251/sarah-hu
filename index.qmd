@@ -128,3 +128,5 @@ How we work together: expectations, mentoring, code club, and onboarding.
 [Lab community →](lab-policies.qmd){.more}
 :::
 ::::::
+
+![](images/banners/specimen-plate-footer.jpg){.footer-banner fig-alt="Four line illustrations from the lab: Acantharia, Emiliania huxleyi, Thalassiosira pseudonana, and Trimyema sp."}
