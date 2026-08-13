@@ -264,11 +264,7 @@ main.content a:not(.btn):not(.card-link):hover {
   object-fit: cover;
   object-position: center top;
   border-radius: $border-radius;
-  filter: grayscale(100%);
-  transition: filter .35s ease;
 }
-
-.person-lead:hover img { filter: grayscale(0%); }
 
 .person-lead .lead-body { flex: 1 1 auto; min-width: 0; }
 
@@ -311,11 +307,7 @@ main.content a:not(.btn):not(.card-link):hover {
   object-position: center top;
   border-radius: $border-radius;
   margin-bottom: 1rem;
-  filter: grayscale(100%);
-  transition: filter .35s ease;
 }
-
-.person:hover img { filter: grayscale(0%); }
 
 .person h4,
 .person h5 {
@@ -358,7 +350,6 @@ main.content a:not(.btn):not(.card-link):hover {
 }
 
 .alumni-grid .person h5 { font-size: .95rem; }
-.alumni-grid .person img { filter: grayscale(100%); }
 
 // Labeled slot for an image not yet supplied
 .placeholder-img {
@@ -770,12 +761,11 @@ img.project-logo {
   height: 58px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(100%);
   opacity: .72;
-  transition: filter .3s ease, opacity .3s ease;
+  transition: opacity .3s ease;
 }
 
-.funder-row img:hover { filter: grayscale(0%); opacity: 1; }
+.funder-row img:hover { opacity: 1; }
 
 .funder-slot {
   height: 58px;
